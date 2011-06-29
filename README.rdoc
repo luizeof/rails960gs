@@ -1,6 +1,21 @@
 = rails960gs
 
-Description goes here.
+
+ == What is rails960gs ? ==
+
+ This is a little gem with some Helpers that make use of 960.gs more DRY with Rails.
+
+ == Install ==
+
+ type on console:
+
+ <pre>gem install rails960gs</pre>
+
+ it's all !!!!
+
+ == Usage ==
+
+ ... under development ...
 
 == Contributing to rails960gs
  
@@ -14,6 +29,5 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 orangeweb. See LICENSE.txt for
-further details.
+Copyright (c) 2011 orangeweb. See LICENSE.txt for further details.
 
