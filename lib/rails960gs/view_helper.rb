@@ -1,18 +1,8 @@
-# The program takes an initial word or phrase from
-# the command line (or in the absence of a
-# parameter from the first line of standard
-# input).  In then reads successive words or
-# phrases from standard input and reports whether
-# they are angrams of the first word.
+# Helpers para auxiliar o uso do 960.gs com Rails
 #
 # Author::    Luiz Eduardo de Oliveira Fomseca - Agência Orangeweb  (mailto:atendimento@orangeweb.com.br)
 # Copyright:: Copyright (c) 2011 Agência Orangeweb, MEI
 # License::   MIT
-
-# This class holds the letters in the original
-# word or phrase. The is_anagram? method allows us
-# to test if subsequent words or phrases are
-# anagrams of the original
 
 require 'railtie.rb'
 
@@ -32,17 +22,20 @@ module Rails960gs
   end        
         
   
-  # Carrega o CSS necessário para o funcionamento do 960.gs do CDN *cachedcommons.org*
-  def cdn_960gs (options={ :min=>true, :reset => false})    
-    
-    if options[:min] then
-     @@out = stylesheet_link_tag "http://cachedcommons.org/cache/960/0.0.0/stylesheets/960-min.css"
-    else  
-     @@out = stylesheet_link_tag "http://cachedcommons.org/cache/960/0.0.0/stylesheets/960.css" 
-    end 
+  # Carrega o CSS necessário para o funcionamento do 960.gs do CDN *cachedcommons.org* 
+  # <b>Parâmetros</b>
+  # * <b>:min => (true|false)</b> - Carrega o arquivi minifield - (Default = true)
+  # * <b>:reset => (true|false)</b> - Carrega o YUI CSS Reset - (Default = false)      
+  def cdn_960gs(options={ :min => true, :reset => false})       
     
     if options[:reset] then
      @@out = stylesheet_link_tag "http://yui.yahooapis.com/3.3.0/build/cssreset/reset-min.css"
+    end    
+    
+    if options[:min] then
+     @@out += stylesheet_link_tag "http://cachedcommons.org/cache/960/0.0.0/stylesheets/960-min.css"
+    else  
+     @@out += stylesheet_link_tag "http://cachedcommons.org/cache/960/0.0.0/stylesheets/960.css" 
     end    
     
     @@out      
@@ -78,7 +71,6 @@ module Rails960gs
   # * <b>:omega => (true|false)</b> - Especifica se a coluna é omega - (Default = false)      
   # * <b>:prefix => (1-12)</b> - Especifica se a coluna é do tipo prefix - (Default = nil)
   # * <b>:suffix => (1-12)</b> - Especifica se a coluna é do tipo suffix - (Default = nil) 
-  
   def gs_col cols=12, options={}, &block
   
   
