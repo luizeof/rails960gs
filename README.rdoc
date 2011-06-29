@@ -1,21 +1,20 @@
 = rails960gs
 
-
-== What is rails960gs ? ==
+== What is rails960gs ?
 
 This is a little gem with some Helpers that make use of 960.gs more DRY with Rails.
 
-== Install ==
+== Install
 
 Just type on console:
 
-<pre>gem install rails960gs</pre>
+ gem install rails960gs
 
- it's all !!!!
+it's all !!!!
 
-== Usage ==
+== Usage
 
- ... under development ...
+... under development ...
 
 == Contributing to rails960gs
  
