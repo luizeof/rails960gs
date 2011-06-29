@@ -1,0 +1,16 @@
+ 
+== What is rails960gs ? ==
+
+This is a little gem with some Helpers that make use of 960.gs more DRY with Rails.
+
+== Install ==
+
+type on console:
+
+ gem install rails960gs
+ 
+it's all !!!!
+
+== Usage ==
+
+... under development ... 
