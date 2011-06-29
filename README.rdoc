@@ -14,7 +14,7 @@ it's all !!!!
 
 == Usage
 
-... under development ...
+see https://github.com/orangeweb/rails960gs/wiki
 
 == Contributing to rails960gs
  
